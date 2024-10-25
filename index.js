@@ -25,7 +25,7 @@ const DEBUG = false;
     console.log("loading resourcepacks...");
     const resourcepacks = await Promise.all(projects.resourcepacks.map(async element => {
         if(!element.override){
-            const resourcepack = await getLatestProjectVersion(element.id, projects.gameVersion, projects.loader);
+            const resourcepack = await getLatestProjectVersion(element.id, projects.gameVersion);
             if(resourcepack == null){
                 console.log(`No version found for ${element.id}, skipping...`);
             }else{
@@ -38,7 +38,7 @@ const DEBUG = false;
     console.log("loading shaderpacks...");
     const shaderpacks = await Promise.all(projects.shaderpacks.map(async element => {
         if(!element.override){
-            const shaderpack = await getLatestProjectVersion(element.id, projects.gameVersion, projects.loader);
+            const shaderpack = await getLatestProjectVersion(element.id, projects.gameVersion);
             if(shaderpack == null){
                 console.log(`No version found for ${element.id}, skipping...`);
             }else{
@@ -98,13 +98,13 @@ const DEBUG = false;
     fs.mkdirSync("./lukas_fabric_modpack");
     fs.writeFileSync('./lukas_fabric_modpack/modrinth.index.json', renderd);
     fs.cpSync('./overrides/', './lukas_fabric_modpack', {recursive: true});
-    zipdir('./output/lukas_fabric_modpack', { saveTo: './lukas_fabric_modpack.zip' }, function (err, buffer) {
+    zipdir('./lukas_fabric_modpack', { saveTo: './output/lukas_fabric_modpack.zip' }, function (err, buffer) {
         if (err) {
             console.log('oh no!', err);
         } else {
             console.log('done!');
             fs.rmSync('./lukas_fabric_modpack', { recursive: true });
-            fs.renameSync('./lukas_fabric_modpack.zip', `./lukas_fabric_modpack-${projects.versionId}.mrpack`);
+            fs.renameSync('./output/lukas_fabric_modpack.zip', `./output/lukas_fabric_modpack.mrpack`);
         }
     });
 })();

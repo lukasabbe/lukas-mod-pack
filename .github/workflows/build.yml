@@ -1,0 +1,30 @@
+name: build
+on: [push]
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
+              with:
+                persist-credentials: false
+                fetch-depth: 0
+            - name: Setup node
+              uses: actions/setup-node@v4
+              with:
+                node-version: '20.x'
+            - name: Install dependencies
+              run: npm install
+            - name: Build
+              run: npm run build
+            - name: capture build artifacts
+              uses: actions/upload-artifact@v4
+              with:
+                name: mrpack
+                path: /output/
+            - name: Upload to discord
+              uses: tsickert/discord-webhook@v6.0.0
+              with:
+                webhook-url: ${{ secrets.DISCORD_WEBHOOK_URL }}
+                content: "Modpack build complete"
+                filename: "output/lukas_fabric_modpack.mrpack"
