@@ -375,6 +375,12 @@
             "id":"bEpr0Arc",
             "override": false,
             "version":""
+        },
+        {
+            "name":"Simple Voice Chat",
+            "id":"9eGKb6K1",
+            "override": false,
+            "version":""
         }
     ],
     "resourcepacks":[
