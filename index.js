@@ -15,6 +15,7 @@ const DEBUG = false;
             const mod = await getLatestProjectVersion(element.id, projects.gameVersion, projects.loader);
             if(mod == null){
                 console.log(`No version found for ${element.id}, skipping...`);
+                return null;
             }else{
                 return mod;
             }
@@ -28,6 +29,7 @@ const DEBUG = false;
             const resourcepack = await getLatestProjectVersion(element.id, projects.gameVersion);
             if(resourcepack == null){
                 console.log(`No version found for ${element.id}, skipping...`);
+                return null;
             }else{
                 return resourcepack;
             }
@@ -41,6 +43,7 @@ const DEBUG = false;
             const shaderpack = await getLatestProjectVersion(element.id, projects.gameVersion);
             if(shaderpack == null){
                 console.log(`No version found for ${element.id}, skipping...`);
+                return null;
             }else{
                 return shaderpack;
             }
@@ -57,37 +60,40 @@ const DEBUG = false;
         "files":[]
     }
     mods.forEach(element => {
-        data.files.push({
-            "path":`mods/${element.files[0].filename}`,
-            "sha512":element.files[0].hashes.sha512,
-            "sha1":element.files[0].hashes.sha1,
-            "clientEnv": element.clientEnv,
-            "serverEnv": element.serverEnv,
-            "link": element.files[0].url,
-            "size": element.files[0].size
-        })
+        if(element != null)
+            data.files.push({
+                "path":`mods/${element.files[0].filename}`,
+                "sha512":element.files[0].hashes.sha512,
+                "sha1":element.files[0].hashes.sha1,
+                "clientEnv": element.clientEnv,
+                "serverEnv": element.serverEnv,
+                "link": element.files[0].url,
+                "size": element.files[0].size
+            })
     });
     resourcepacks.forEach(element => {
-        data.files.push({
-            "path":`resourcepacks/${element.files[0].filename}`,
-            "sha512":element.files[0].hashes.sha512,
-            "sha1":element.files[0].hashes.sha1,
-            "clientEnv": element.clientEnv,
-            "serverEnv": element.serverEnv,
-            "link": element.files[0].url,
-            "size": element.files[0].size
-        })
+        if(element != null)
+            data.files.push({
+                "path":`resourcepacks/${element.files[0].filename}`,
+                "sha512":element.files[0].hashes.sha512,
+                "sha1":element.files[0].hashes.sha1,
+                "clientEnv": element.clientEnv,
+                "serverEnv": element.serverEnv,
+                "link": element.files[0].url,
+                "size": element.files[0].size
+            })
     });
     shaderpacks.forEach(element => {
-        data.files.push({
-            "path":`shaderpacks/${element.files[0].filename}`,
-            "sha512":element.files[0].hashes.sha512,
-            "sha1":element.files[0].hashes.sha1,
-            "clientEnv": element.clientEnv,
-            "serverEnv": element.serverEnv,
-            "link": element.files[0].url,
-            "size": element.files[0].size
-        })
+        if(element != null)
+            data.files.push({
+                "path":`shaderpacks/${element.files[0].filename}`,
+                "sha512":element.files[0].hashes.sha512,
+                "sha1":element.files[0].hashes.sha1,
+                "clientEnv": element.clientEnv,
+                "serverEnv": element.serverEnv,
+                "link": element.files[0].url,
+                "size": element.files[0].size
+            })
     });
 
     console.log("rendering template...");
@@ -123,6 +129,7 @@ async function getLatestProjectVersion(projectId, gameVersion, loader = null) {
         fetch(link).then(res => res.json()).then(json => {
             if(json.length == 0){
                 resolve(null);
+                return;
             }
             fetch(`https://api.modrinth.com/v2/project/${projectId}`).then(res => res.json()).then( project => {
                 if(project.client_side == undefined)

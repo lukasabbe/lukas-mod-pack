@@ -1,7 +1,7 @@
 {
-    "gameVersion":"1.21.1",
+    "gameVersion":"1.21.3",
     "fabricLoaderVersion":"0.16.7",
-    "versionId": "1.0+1.21.1",
+    "versionId": "1.0+1.21.3",
     "loader":"fabric",
     "mods":[
         {
@@ -25,8 +25,8 @@
         {
             "name":"spark",
             "id":"l6YH9Als",
-            "override": false,
-            "version":""
+            "override": true,
+            "version":"whEIfq1H"
         },
         {
             "name":"Mod Menu",
@@ -139,8 +139,8 @@
         {
             "name":"Cloth Config API",
             "id":"9s6osm5g",
-            "override": false,
-            "version":""
+            "override": true,
+            "version":"JbVSQUVw"
         },
         {
             "name":"Iris Shaders",
@@ -301,8 +301,8 @@
         {
             "name":"Stendhal",
             "id":"BWloQ9jK",
-            "override": true,
-            "version":"I3a5043B"
+            "override": false,
+            "version":""
         },
         {
             "name":"e4mc",
@@ -367,12 +367,18 @@
         {
             "name":"Architectury API",
             "id":"lhGA9TYQ",
-            "override": false,
-            "version":""
+            "override": true,
+            "version":"7Pu945E0"
         },
         {
             "name":"Litematica",
             "id":"bEpr0Arc",
+            "override": false,
+            "version":""
+        },
+        {
+            "name":"Simple Voice Chat",
+            "id":"9eGKb6K1",
             "override": false,
             "version":""
         }
@@ -425,7 +431,7 @@
         {
             "name":"Rethinking Voxels",
             "id":"kmwfVOoi",
-            "override": true,
+            "override": false,
             "version":"nZpwS5Nf"
         },
         {
