@@ -1,0 +1,16 @@
+{
+  "name": "modpackbuilder",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+    "node-fetch": "^2.7.0",
+    "nunjucks": "^3.2.4",
+    "zip-dir": "^2.0.0"
+  }
+}

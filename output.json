@@ -1,0 +1,59 @@
+{
+  "game": "minecraft",
+  "formatVersion": 1,
+  "versionId": "1.0+1.21.1",
+  "name": "Lukas modpack",
+  "summary": "This is the pack I use in vanilla, You can download it if you want the same experience",
+  "files": [
+    
+    {
+      "path": "mods/sodium-fabric-0.6.0-beta.2+mc1.21.1.jar",
+      "hashes": {
+        "sha512": "cca337b62e66dba14755ede43e44b0156df0bdeba28651f1a1ac3b7e0f6f8de9995dbbafb21a753a6d409d8de7e36bf56227fd1c359b3931bded75999f81dabc",
+        "sha1": "7a94dda82ffd1fe24cd1cacad70eb89dbe564ea6"
+      },
+      "env":{
+        "client": "required",
+        "server": "unsupported"
+      },
+      "downloads":[
+        "https://cdn.modrinth.com/data/AANobbMI/versions/CcIWi5Av/sodium-fabric-0.6.0-beta.2%2Bmc1.21.1.jar"
+      ],
+      "fileSize": 1266516
+    },
+    {
+      "path": "resourcepacks/skin-pack.zip",
+      "hashes": {
+        "sha512": "65e00b07bfe0979bc546fc16be4dbd3c22b0c7b9b5ed957985df9388a0f32ecceed57b97dc1cbcb175c2f975c1ee872016107b5fa93e7dd5ab88e347e269519b",
+        "sha1": "13625c7330c24df3f061a97d8d3145b6f7fd2937"
+      },
+      "env":{
+        "client": "required",
+        "server": "unsupported"
+      },
+      "downloads":[
+        "https://cdn.modrinth.com/data/Ftifu6C1/versions/ymskdOSM/skin-pack.zip"
+      ],
+      "fileSize": 996765
+    },
+    {
+      "path": "shaderpacks/ComplementaryUnbound_r5.3.zip",
+      "hashes": {
+        "sha512": "77171616e35fe456898a6d140f858de6c2011e7001d3263404e6cd45a356ffeccfacef9182478d6315a1e321642d14bdd5eca3865ecad85b750f5d4f404df055",
+        "sha1": "9474a8bc55e4f37786568ae532e4336aab72ba42"
+      },
+      "env":{
+        "client": "required",
+        "server": "unsupported"
+      },
+      "downloads":[
+        "https://cdn.modrinth.com/data/R6NEzAwj/versions/CVu3AGAd/ComplementaryUnbound_r5.3.zip"
+      ],
+      "fileSize": 446661
+    }
+  ],
+  "dependencies": {
+    "fabric-loader": "0.16.7",
+    "minecraft": "1.21.1"
+  }
+}

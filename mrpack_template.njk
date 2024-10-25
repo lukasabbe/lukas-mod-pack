@@ -1,0 +1,29 @@
+{
+  "game": "minecraft",
+  "formatVersion": 1,
+  "versionId": "{{ versionId }}",
+  "name": "{{ modpackName}}",
+  "summary": "{{ modpackSummary }}",
+  "files": [
+    {% for file in files %}
+    {
+      "path": "{{ file.path }}",
+      "hashes": {
+        "sha512": "{{ file.sha512 }}",
+        "sha1": "{{ file.sha1 }}"
+      },
+      "env":{
+        "client": "{{ file.clientEnv }}",
+        "server": "{{ file.serverEnv }}"
+      },
+      "downloads":[
+        "{{ file.link }}"
+      ],
+      "fileSize": {{ file.size }}
+    }{%- if not loop.last -%},{%- endif -%}{% endfor %}
+  ],
+  "dependencies": {
+    "fabric-loader": "{{ fabricLoaderVersion }}",
+    "minecraft": "{{ minecraftVersion }}"
+  }
+}

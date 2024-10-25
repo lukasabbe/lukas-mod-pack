@@ -1,0 +1,444 @@
+{
+    "gameVersion":"1.21.1",
+    "fabricLoaderVersion":"0.16.7",
+    "versionId": "1.0+1.21.1",
+    "loader":"fabric",
+    "mods":[
+        {
+            "name":"Sodium",
+            "id":"AANobbMI",
+            "override": false,
+            "version":""
+        },
+        {
+            "name":"Not Enough Pages",
+            "id":"zitKUUW9",
+            "override": false,
+            "version":""
+        },
+        {
+            "name":"No Chat Reports",
+            "id":"qQyHxfxd",
+            "override": false,
+            "version":""
+        },
+        {
+            "name":"spark",
+            "id":"l6YH9Als",
+            "override": false,
+            "version":""
+        },
+        {
+            "name":"Mod Menu",
+            "id":"mOgUt4GM",
+            "override": false,
+            "version":""
+        },
+        {
+            "name":"Fabric Language Kotlin",
+            "id":"Ha28R6CL",
+            "override": false,
+            "version":""
+        },
+        {
+            "name":"Better Ping Display [Fabric]",
+            "id":"MS1ZMyR7",
+            "override": false,
+            "version":""
+        },
+        {
+            "name":"Fabric API",
+            "id":"P7dR8mSH",
+            "override": false,
+            "version":""
+        },
+        {
+            "name":"Command Block IDE",
+            "id":"IDOSfa6c",
+            "override": false,
+            "version":""
+        },
+        {
+            "name":"Reese's Sodium Options",
+            "id":"Bh37bMuy",
+            "override": false,
+            "version":""
+        },
+        {
+            "name":"Continuity",
+            "id":"1IjD5062",
+            "override": false,
+            "version":""
+        },
+        {
+            "name":"Wavey Capes",
+            "id":"kYuIpRLv",
+            "override": false,
+            "version":""
+        },
+        {
+            "name":"Text Placeholder API",
+            "id":"eXts2L7r",
+            "override": false,
+            "version":""
+        },
+        {
+            "name":"More Chat History",
+            "id":"8qkXwOnk",
+            "override": false,
+            "version":""
+        },
+        {
+            "name":"Language Reload",
+            "id":"uLbm7CG6",
+            "override": false,
+            "version":""
+        },
+        {
+            "name":"NBT Autocomplete",
+            "id":"UR0ocuEt",
+            "override": false,
+            "version":""
+        },
+        {
+            "name":"MiniHUD",
+            "id":"UMxybHE8",
+            "override": false,
+            "version":""
+        },
+        {
+            "name":"Bucket-Pickup",
+            "id":"n3adpCWr",
+            "override": false,
+            "version":""
+        },
+        {
+            "name":"CIT Resewn",
+            "id":"otVJckYQ",
+            "override": false,
+            "version":""
+        },
+        {
+            "name":"LambDynamicLights",
+            "id":"yBW8D80W",
+            "override": false,
+            "version":""
+        },
+        {
+            "name":"Xaero's Minimap",
+            "id":"1bokaNcj",
+            "override": false,
+            "version":""
+        },
+        {
+            "name":"Transparent Nametags",
+            "id":"WmAmslke",
+            "override": false,
+            "version":""
+        },
+        {
+            "name":"Cloth Config API",
+            "id":"9s6osm5g",
+            "override": false,
+            "version":""
+        },
+        {
+            "name":"Iris Shaders",
+            "id":"YL57xq9U",
+            "override": false,
+            "version":""
+        },
+        {
+            "name":"More Culling",
+            "id":"51shyZVL",
+            "override": false,
+            "version":""
+        },
+        {
+            "name":"Bobby",
+            "id":"M08ruV16",
+            "override": false,
+            "version":""
+        },
+        {
+            "name":"Flashback",
+            "id":"4das1Fjq",
+            "override": false,
+            "version":""
+        },
+        {
+            "name":"Hey Wiki",
+            "id":"6DnswkCZ",
+            "override": false,
+            "version":""
+        },
+        {
+            "name":"YetAnotherConfigLib (YACL)",
+            "id":"1eAoo2KR",
+            "override": false,
+            "version":""
+        },
+        {
+            "name":"Bookshelf Inspector",
+            "id":"rOrXjyPb",
+            "override": false,
+            "version":""
+        },
+        {
+            "name":"Krypton",
+            "id":"fQEb0iXm",
+            "override": false,
+            "version":""
+        },
+        {
+            "name":"3D Skin Layers",
+            "id":"zV5r3pPn",
+            "override": false,
+            "version":""
+        },
+        {
+            "name":"Indium",
+            "id":"Orvt0mRa",
+            "override": false,
+            "version":""
+        },
+        {
+            "name":"Simple Elytra Hud",
+            "id":"7OQY3NQS",
+            "override": false,
+            "version":""
+        },
+        {
+            "name":"[ETF] Entity Texture Features",
+            "id":"BVzZfTc1",
+            "override": false,
+            "version":""
+        },
+        {
+            "name":"Lexikon",
+            "id":"5w07P4CU",
+            "override": false,
+            "version":""
+        },
+        {
+            "name":"ImmediatelyFast",
+            "id":"5ZwdcRci",
+            "override": false,
+            "version":""
+        },
+        {
+            "name":"Auth Me",
+            "id":"yjgIrBjZ",
+            "override": false,
+            "version":""
+        },
+        {
+            "name":"Entity View Distance",
+            "id":"ihnBJ6on",
+            "override": false,
+            "version":""
+        },
+        {
+            "name":"Xaero's World Map",
+            "id":"NcUtCpym",
+            "override": false,
+            "version":""
+        },
+        {
+            "name":"AppleSkin",
+            "id":"EsAfCjCV",
+            "override": false,
+            "version":""
+        },
+        {
+            "name":"Zoomify",
+            "id":"w7ThoJFB",
+            "override": false,
+            "version":""
+        },
+        {
+            "name":"Axiom",
+            "id":"N6n5dqoA",
+            "override": false,
+            "version":""
+        },
+        {
+            "name":"MineMath",
+            "id":"YAbaLUgy",
+            "override": false,
+            "version":""
+        },
+        {
+            "name":"BetterF3",
+            "id":"8shC1gFX",
+            "override": false,
+            "version":""
+        },
+        {
+            "name":"AudioPlayer",
+            "id":"SRlzjEBS",
+            "override": false,
+            "version":""
+        },
+        {
+            "name":"FerriteCore",
+            "id":"uXXizFIs",
+            "override": false,
+            "version":""
+        },
+        {
+            "name":"Sodium Extra",
+            "id":"PtjYWJkn",
+            "override": false,
+            "version":""
+        },
+        {
+            "name":"[EMF] Entity Model Features",
+            "id":"4I1XuqiY",
+            "override": false,
+            "version":""
+        },
+        {
+            "name":"Stendhal",
+            "id":"BWloQ9jK",
+            "override": true,
+            "version":"I3a5043B"
+        },
+        {
+            "name":"e4mc",
+            "id":"qANg5Jrr",
+            "override": false,
+            "version":""
+        },
+        {
+            "name":"Capes",
+            "id":"89Wsn8GD",
+            "override": false,
+            "version":""
+        },
+        {
+            "name":"Entity Culling",
+            "id":"NNAgCjsB",
+            "override": false,
+            "version":""
+        },
+        {
+            "name":"Dynamic FPS",
+            "id":"LQ3K71Q1",
+            "override": false,
+            "version":""
+        },
+        {
+            "name":"FPS - Display",
+            "id":"DIlqwRFH",
+            "override": false,
+            "version":""
+        },
+        {
+            "name":"Lithium",
+            "id":"gvQqBUqZ",
+            "override": false,
+            "version":""
+        },
+        {
+            "name":"FabricSkyboxes",
+            "id":"YBz7DOs8",
+            "override": false,
+            "version":""
+        },
+        {
+            "name":"Enhanced Block Entities",
+            "id":"OVuFYfre",
+            "override": false,
+            "version":""
+        },
+        {
+            "name":"Format",
+            "id":"m5jDoXaM",
+            "override": false,
+            "version":""
+        },
+        {
+            "name":"MaLiLib",
+            "id":"GcWjdA9I",
+            "override": false,
+            "version":""
+        },
+        {
+            "name":"Architectury API",
+            "id":"lhGA9TYQ",
+            "override": false,
+            "version":""
+        },
+        {
+            "name":"Litematica",
+            "id":"bEpr0Arc",
+            "override": false,
+            "version":""
+        }
+    ],
+    "resourcepacks":[
+        {
+            "name":"Trusted skin pack",
+            "id":"Ftifu6C1",
+            "override": false,
+            "version":""
+        },
+        {
+            "name":"Trusted Pack",
+            "id":"gLT5Flq2",
+            "override": false,
+            "version":""
+        },
+        {
+            "name":"Dramatic Skys",
+            "id":"2YyNMled",
+            "override": false,
+            "version":""
+        },
+        {
+            "name":"Fresh Animations",
+            "id":"50dA9Sha",
+            "override": false,
+            "version":""
+        }
+    ],
+    "shaderpacks":[
+        {
+            "name":"Solas Shader",
+            "id":"EpQFjzrQ",
+            "override": false,
+            "version":""
+        },
+        {
+            "name":"Complementary Shaders - Unbound",
+            "id":"R6NEzAwj",
+            "override": false,
+            "version":""
+        },
+        {
+            "name":"BSL Shaders - Original",
+            "id":"Q1vvjJYV",
+            "override": false,
+            "version":""
+        },
+        {
+            "name":"Rethinking Voxels",
+            "id":"kmwfVOoi",
+            "override": true,
+            "version":"nZpwS5Nf"
+        },
+        {
+            "name":"Complementary Shaders - Reimagined",
+            "id":"HVnmMxH1",
+            "override": false,
+            "version":""
+        },
+        {
+            "name":"Super Duper Vanilla",
+            "id":"LMIZZNxZ",
+            "override": false,
+            "version":""
+        }
+    ]
+}
