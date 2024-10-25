@@ -92,10 +92,13 @@ const DEBUG = false;
 
     console.log("rendering template...");
     const renderd = nunjucks.render('mrpack_template.njk', data);
+    if(!fs.existsSync('./output')){
+        fs.mkdirSync('./output');
+    }
     fs.mkdirSync("./lukas_fabric_modpack");
     fs.writeFileSync('./lukas_fabric_modpack/modrinth.index.json', renderd);
     fs.cpSync('./overrides/', './lukas_fabric_modpack', {recursive: true});
-    zipdir('./lukas_fabric_modpack', { saveTo: './lukas_fabric_modpack.zip' }, function (err, buffer) {
+    zipdir('./output/lukas_fabric_modpack', { saveTo: './lukas_fabric_modpack.zip' }, function (err, buffer) {
         if (err) {
             console.log('oh no!', err);
         } else {
