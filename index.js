@@ -15,7 +15,6 @@ const DEBUG = false;
             const mod = await getLatestProjectVersion(element.id, projects.gameVersion, projects.loader);
             if(mod == null){
                 console.log(`No version found for ${element.id}, skipping...`);
-                return null;
             }else{
                 return mod;
             }
@@ -29,7 +28,6 @@ const DEBUG = false;
             const resourcepack = await getLatestProjectVersion(element.id, projects.gameVersion);
             if(resourcepack == null){
                 console.log(`No version found for ${element.id}, skipping...`);
-                return null;
             }else{
                 return resourcepack;
             }
@@ -43,7 +41,6 @@ const DEBUG = false;
             const shaderpack = await getLatestProjectVersion(element.id, projects.gameVersion);
             if(shaderpack == null){
                 console.log(`No version found for ${element.id}, skipping...`);
-                return null;
             }else{
                 return shaderpack;
             }
@@ -60,40 +57,31 @@ const DEBUG = false;
         "files":[]
     }
     mods.forEach(element => {
-        if(element != null)
-            data.files.push({
-                "path":`mods/${element.files[0].filename}`,
-                "sha512":element.files[0].hashes.sha512,
-                "sha1":element.files[0].hashes.sha1,
-                "clientEnv": element.clientEnv,
-                "serverEnv": element.serverEnv,
-                "link": element.files[0].url,
-                "size": element.files[0].size
-            })
+        data.files.push({
+            "path":`mods/${element.files[0].filename}`,
+            "sha512":element.files[0].hashes.sha512,
+            "sha1":element.files[0].hashes.sha1,
+            "link": element.files[0].url,
+            "size": element.files[0].size
+        })
     });
     resourcepacks.forEach(element => {
-        if(element != null)
-            data.files.push({
-                "path":`resourcepacks/${element.files[0].filename}`,
-                "sha512":element.files[0].hashes.sha512,
-                "sha1":element.files[0].hashes.sha1,
-                "clientEnv": element.clientEnv,
-                "serverEnv": element.serverEnv,
-                "link": element.files[0].url,
-                "size": element.files[0].size
-            })
+        data.files.push({
+            "path":`resourcepacks/${element.files[0].filename}`,
+            "sha512":element.files[0].hashes.sha512,
+            "sha1":element.files[0].hashes.sha1,
+            "link": element.files[0].url,
+            "size": element.files[0].size
+        })
     });
     shaderpacks.forEach(element => {
-        if(element != null)
-            data.files.push({
-                "path":`shaderpacks/${element.files[0].filename}`,
-                "sha512":element.files[0].hashes.sha512,
-                "sha1":element.files[0].hashes.sha1,
-                "clientEnv": element.clientEnv,
-                "serverEnv": element.serverEnv,
-                "link": element.files[0].url,
-                "size": element.files[0].size
-            })
+        data.files.push({
+            "path":`shaderpacks/${element.files[0].filename}`,
+            "sha512":element.files[0].hashes.sha512,
+            "sha1":element.files[0].hashes.sha1,
+            "link": element.files[0].url,
+            "size": element.files[0].size
+        })
     });
 
     console.log("rendering template...");
@@ -131,15 +119,7 @@ async function getLatestProjectVersion(projectId, gameVersion, loader = null) {
                 resolve(null);
                 return;
             }
-            fetch(`https://api.modrinth.com/v2/project/${projectId}`).then(res => res.json()).then( project => {
-                if(project.client_side == undefined)
-                    project.client_side = "";
-                if(project.server_side == undefined)
-                    project.server_side = "";
-                json[0].clientEnv = project.client_side;
-                json[0].serverEnv = project.server_side;
-                resolve(json[0]);
-            })
+            resolve(json[0]);
         })
     });
 }
@@ -149,11 +129,7 @@ async function getVersion(versionId, projectId) {
         console.log(projectId)
     return new Promise((resolve, reject) => {
         fetch(`https://api.modrinth.com/v2/version/${versionId}`).then(res => res.json()).then(json => {
-            fetch(`https://api.modrinth.com/v2/project/${projectId}`).then(res => res.json()).then(project => {
-                json.clientEnv = project.client_side;
-                json.serverEnv = project.server_side;
-                resolve(json);
-            })
+            resolve(json);
         })
     });
 }
