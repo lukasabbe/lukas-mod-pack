@@ -57,31 +57,34 @@ const DEBUG = false;
         "files":[]
     }
     mods.forEach(element => {
-        data.files.push({
-            "path":`mods/${element.files[0].filename}`,
-            "sha512":element.files[0].hashes.sha512,
-            "sha1":element.files[0].hashes.sha1,
-            "link": element.files[0].url,
-            "size": element.files[0].size
-        })
+        if(element != null)
+            data.files.push({
+                "path":`mods/${element.files[0].filename}`,
+                "sha512":element.files[0].hashes.sha512,
+                "sha1":element.files[0].hashes.sha1,
+                "link": element.files[0].url,
+                "size": element.files[0].size
+            })
     });
     resourcepacks.forEach(element => {
-        data.files.push({
-            "path":`resourcepacks/${element.files[0].filename}`,
-            "sha512":element.files[0].hashes.sha512,
-            "sha1":element.files[0].hashes.sha1,
-            "link": element.files[0].url,
-            "size": element.files[0].size
-        })
+        if(element != null)
+            data.files.push({
+                "path":`resourcepacks/${element.files[0].filename}`,
+                "sha512":element.files[0].hashes.sha512,
+                "sha1":element.files[0].hashes.sha1,
+                "link": element.files[0].url,
+                "size": element.files[0].size
+            })
     });
     shaderpacks.forEach(element => {
-        data.files.push({
-            "path":`shaderpacks/${element.files[0].filename}`,
-            "sha512":element.files[0].hashes.sha512,
-            "sha1":element.files[0].hashes.sha1,
-            "link": element.files[0].url,
-            "size": element.files[0].size
-        })
+        if(element != null)
+            data.files.push({
+                "path":`shaderpacks/${element.files[0].filename}`,
+                "sha512":element.files[0].hashes.sha512,
+                "sha1":element.files[0].hashes.sha1,
+                "link": element.files[0].url,
+                "size": element.files[0].size
+            })
     });
 
     console.log("rendering template...");

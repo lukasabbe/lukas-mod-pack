@@ -25,8 +25,8 @@
         {
             "name":"spark",
             "id":"l6YH9Als",
-            "override": true,
-            "version":"whEIfq1H"
+            "override": false,
+            "version":""
         },
         {
             "name":"Mod Menu",
@@ -367,8 +367,8 @@
         {
             "name":"Architectury API",
             "id":"lhGA9TYQ",
-            "override": true,
-            "version":"7Pu945E0"
+            "override": false,
+            "version":""
         },
         {
             "name":"Litematica",
