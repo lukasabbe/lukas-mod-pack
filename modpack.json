@@ -1,7 +1,7 @@
 {
     "gameVersion":"1.21.3",
-    "fabricLoaderVersion":"0.16.7",
-    "versionId": "1.3+1.21.3",
+    "fabricLoaderVersion":"0.16.9",
+    "versionId": "1.5+1.21.3",
     "loader":"fabric",
     "mods":[
         {
@@ -263,12 +263,6 @@
             "version":""
         },
         {
-            "name":"MineMath",
-            "id":"YAbaLUgy",
-            "override": false,
-            "version":""
-        },
-        {
             "name":"BetterF3",
             "id":"8shC1gFX",
             "override": false,
@@ -382,6 +376,7 @@
             "override": false,
             "version":""
         }
+
     ],
     "resourcepacks":[
         {
