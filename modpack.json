@@ -1,7 +1,7 @@
 {
-    "gameVersion":"1.21.3",
+    "gameVersion":"1.21.4",
     "fabricLoaderVersion":"0.16.9",
-    "versionId": "1.7+1.21.3",
+    "versionId": "1.0+1.21.4",
     "loader":"fabric",
     "mods":[
         {
@@ -145,12 +145,6 @@
         {
             "name":"Iris Shaders",
             "id":"YL57xq9U",
-            "override": false,
-            "version":""
-        },
-        {
-            "name":"More Culling",
-            "id":"51shyZVL",
             "override": false,
             "version":""
         },
