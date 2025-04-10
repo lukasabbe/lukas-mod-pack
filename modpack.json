@@ -1,7 +1,7 @@
 {
-    "gameVersion":"1.21.4",
-    "fabricLoaderVersion":"0.16.9",
-    "versionId": "1.4+1.21.4",
+    "gameVersion":"1.21.5",
+    "fabricLoaderVersion":"0.16.10",
+    "versionId": "1.2+1.21.5",
     "loader":"fabric",
     "mods":[
         {
@@ -167,12 +167,6 @@
             "version":""
         },
         {
-            "name":"Hey Wiki",
-            "id":"6DnswkCZ",
-            "override": false,
-            "version":""
-        },
-        {
             "name":"YetAnotherConfigLib (YACL)",
             "id":"1eAoo2KR",
             "override": false,
@@ -193,12 +187,6 @@
         {
             "name":"3D Skin Layers",
             "id":"zV5r3pPn",
-            "override": false,
-            "version":""
-        },
-        {
-            "name":"Indium",
-            "id":"Orvt0mRa",
             "override": false,
             "version":""
         },
@@ -347,8 +335,8 @@
             "version":""
         },
         {
-            "name":"Format",
-            "id":"m5jDoXaM",
+            "name":"Format 2.0",
+            "id":"lTOqziWV",
             "override": false,
             "version":""
         },
@@ -365,14 +353,14 @@
             "version":""
         },
         {
-            "name":"Litematica",
-            "id":"bEpr0Arc",
+            "name":"Simple Voice Chat",
+            "id":"9eGKb6K1",
             "override": false,
             "version":""
         },
         {
-            "name":"Simple Voice Chat",
-            "id":"9eGKb6K1",
+            "name":"Server Country Flags",
+            "id":"L6HW4EbG",
             "override": false,
             "version":""
         }
