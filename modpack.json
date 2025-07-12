@@ -1,7 +1,7 @@
 {
-    "gameVersion":"1.21.6",
+    "gameVersion":"1.21.7",
     "fabricLoaderVersion":"0.16.14",
-    "versionId": "1.2+1.21.6",
+    "versionId": "1.0+1.21.7",
     "loader":"fabric",
     "mods":[
         {
