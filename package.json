@@ -1,16 +1,25 @@
 {
   "name": "modpackbuilder",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "build": "node index.js"
+    "build": "tsc",
+    "dev": "tsc && nodemon dist/index.js",
+    "start": "node dist/index.js",
+    "run": "npm run build && npm run start"
   },
   "author": "",
   "license": "MIT",
   "description": "",
   "dependencies": {
-    "node-fetch": "^2.7.0",
-    "nunjucks": "^3.2.4",
-    "zip-dir": "^2.0.0"
+    "jszip": "^3.10.1",
+    "node-fetch": "^3.3.2",
+    "nunjucks": "^3.2.4"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.13",
+    "@types/nunjucks": "^3.2.6",
+    "nodemon": "^3.1.10",
+    "typescript": "^5.8.3"
   }
 }
