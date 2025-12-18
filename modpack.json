@@ -1,7 +1,7 @@
 {
-    "gameVersion":"1.21.9",
-    "fabricLoaderVersion":"0.17.2",
-    "versionId": "1.0+1.21.9",
+    "gameVersion":"1.21.11",
+    "fabricLoaderVersion":"0.18.3",
+    "versionId": "1.0+1.21.11",
     "loader":"fabric",
     "mods":[
         {
@@ -355,6 +355,12 @@
         {
             "name":"Server Country Flags",
             "id":"L6HW4EbG",
+            "override": false,
+            "version":""
+        },
+        {
+            "name":"Voxy",
+            "id":"fxxUqruK",
             "override": false,
             "version":""
         }
